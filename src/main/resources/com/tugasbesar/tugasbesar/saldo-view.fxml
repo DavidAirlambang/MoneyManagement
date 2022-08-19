@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="446.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tugasbesar.tugasbesar.HelloController">
+   <children>
+      <Text fill="#d11717" layoutX="39.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rangkuman Data">
+         <font>
+            <Font name="GeoSlab703 MdCn BT Bold" size="29.0" />
+         </font>
+      </Text>
+      <Text layoutX="39.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Pengeluaran">
+         <font>
+            <Font name="GeoSlab703 MdCn BT Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="39.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Pendapatan">
+         <font>
+            <Font name="GeoSlab703 MdCn BT Bold" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtTotalPengeluaran" layoutX="165.0" layoutY="106.0" />
+      <TextField fx:id="txtTotalPendapatan" layoutX="165.0" layoutY="148.0" />
+      <Text fill="#d11717" layoutX="39.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rincian Saldo">
+         <font>
+            <Font name="GeoSlab703 MdCn BT Bold" size="23.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
