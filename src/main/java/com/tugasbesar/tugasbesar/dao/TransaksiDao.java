@@ -1,6 +1,5 @@
 package com.tugasbesar.tugasbesar.dao;
 
-import com.tugasbesar.tugasbesar.model.PendapatanEntity;
 import com.tugasbesar.tugasbesar.model.TransaksiEntity;
 import com.tugasbesar.tugasbesar.utility.HiberUtility;
 import org.hibernate.Session;

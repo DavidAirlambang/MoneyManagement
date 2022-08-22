@@ -18,32 +18,7 @@ public class HelloController {
     public Button btnSaldo;
     public Label label1;
     public StackPane mainArea;
-    public TextField inputIdTransaksi;
-    public TextField inputNominal;
-    public DatePicker inputTanggal;
-    public ComboBox cmbJenis;
-    public TextField inputKeterangan;
-    public ComboBox cmbTempat;
-    public Button btnSaveData;
-    public TableView tabelPendapatan;
-    public TableView tabelPengeluaran;
-    public TableColumn kolomIdTransaksiPendapatan;
-    public TableColumn kolomNominalPendapatan;
-    public TableColumn kolomTanggalPendapatan;
-    public TableColumn kolomJenisPendapatan;
-    public TableColumn kolomKeteranganPendapatan;
-    public TableColumn kolomTempatPendapatan;
-    public TableColumn kolomIdTransaksiPengeluaran;
-    public TableColumn kolomNominalPengeluaran;
-    public TableColumn kolomTanggalPengeluaran;
-    public TableColumn kolomJenisPengeluaran;
-    public TableColumn kolomTempatPengeluaran;
-    public TableColumn kolomKeteranganPengeluaran;
-    public TextField txtTotalPengeluaran;
-    public TextField txtTotalPendapatan;
     public AnchorPane layerBeranda;
-    @FXML
-    private Label welcomeText;
 
     public void initialize() {
 //        Parent fxml = null;

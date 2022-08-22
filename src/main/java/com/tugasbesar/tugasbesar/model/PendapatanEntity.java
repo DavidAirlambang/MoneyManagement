@@ -1,6 +1,7 @@
 package com.tugasbesar.tugasbesar.model;
 
 import javax.persistence.*;
+import java.util.Collection;
 
 @Entity
 @Table(name = "pendapatan", schema = "moneymanagementdb", catalog = "")
@@ -12,6 +13,8 @@ public class PendapatanEntity {
     @Basic
     @Column(name = "jenisPendapatan")
     private String jenisPendapatan;
+    @OneToMany(mappedBy = "pendapatanByPendapatanIdPendapatan")
+    private Collection<TransaksiEntity> transaksisByIdPendapatan;
 
     public int getIdPendapatan() {
         return idPendapatan;
@@ -27,6 +30,11 @@ public class PendapatanEntity {
 
     public void setJenisPendapatan(String jenisPendapatan) {
         this.jenisPendapatan = jenisPendapatan;
+    }
+
+    @Override
+    public String toString() {
+        return jenisPendapatan;
     }
 
     @Override
@@ -48,5 +56,13 @@ public class PendapatanEntity {
         int result = idPendapatan;
         result = 31 * result + (jenisPendapatan != null ? jenisPendapatan.hashCode() : 0);
         return result;
+    }
+
+    public Collection<TransaksiEntity> getTransaksisByIdPendapatan() {
+        return transaksisByIdPendapatan;
+    }
+
+    public void setTransaksisByIdPendapatan(Collection<TransaksiEntity> transaksisByIdPendapatan) {
+        this.transaksisByIdPendapatan = transaksisByIdPendapatan;
     }
 }

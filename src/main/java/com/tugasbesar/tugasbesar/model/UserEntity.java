@@ -1,6 +1,7 @@
 package com.tugasbesar.tugasbesar.model;
 
 import javax.persistence.*;
+import java.util.Collection;
 
 @Entity
 @Table(name = "user", schema = "moneymanagementdb", catalog = "")
@@ -12,6 +13,8 @@ public class UserEntity {
     @Basic
     @Column(name = "username")
     private String username;
+    @OneToMany(mappedBy = "userByUserIdUser")
+    private Collection<TransaksiEntity> transaksisByIdUser;
 
     public int getIdUser() {
         return idUser;
@@ -47,5 +50,13 @@ public class UserEntity {
         int result = idUser;
         result = 31 * result + (username != null ? username.hashCode() : 0);
         return result;
+    }
+
+    public Collection<TransaksiEntity> getTransaksisByIdUser() {
+        return transaksisByIdUser;
+    }
+
+    public void setTransaksisByIdUser(Collection<TransaksiEntity> transaksisByIdUser) {
+        this.transaksisByIdUser = transaksisByIdUser;
     }
 }

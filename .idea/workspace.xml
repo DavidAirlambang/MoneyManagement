@@ -4,7 +4,49 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc322d62-c52e-4042-8322-1e08abdf6df8" name="Changes" comment="" />
+    <list default="true" id="bc322d62-c52e-4042-8322-1e08abdf6df8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/MoneyManagement.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/controller/InputController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/controller/PendapatanController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/controller/PengeluaranController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/controller/SaldoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/30a24153-e70c-4c53-92e1-83a2404b4ee5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/30a24153-e70c-4c53-92e1-83a2404b4ee5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MoneyManagement-main/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/dao/TransaksiDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/dao/TransaksiDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/model/PendapatanEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/model/PendapatanEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/model/PengeluaranEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/model/PengeluaranEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/model/SaldoEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/model/SaldoEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/model/TransaksiEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/model/TransaksiEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/model/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/model/UserEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/tugasbesar/tugasbesar/hello-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/tugasbesar/tugasbesar/input-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/tugasbesar/tugasbesar/input-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/tugasbesar/tugasbesar/pendapatan-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/tugasbesar/tugasbesar/pendapatan-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/tugasbesar/tugasbesar/pengeluaran-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/tugasbesar/tugasbesar/pengeluaran-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/tugasbesar/tugasbesar/saldo-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/tugasbesar/tugasbesar/saldo-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/HelloController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/HelloController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/dao/TransaksiDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/dao/TransaksiDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/hello-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/input-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/input-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/model/PendapatanEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/model/PendapatanEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/model/PengeluaranEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/model/PengeluaranEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/model/SaldoEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/model/SaldoEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/model/TransaksiEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/model/TransaksiEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/model/UserEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/model/UserEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/pendapatan-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/pendapatan-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/pengeluaran-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/pengeluaran-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/saldo-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/saldo-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,7 +73,13 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2DYznkBAqBGTwQhjcGD5VGXv4zV" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -41,15 +89,16 @@
     "JPA.DatabaseSchemaImportDialog": "30a24153-e70c-4c53-92e1-83a2404b4ee5",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/Users/hp/IdeaProjects/tugas-hibernate-2072038",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -65,11 +114,13 @@
   </component>
   <component name="RunManager">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.tugasbesar.tugasbesar.HelloApplication" />
-      <module name="TugasBesar" />
+      <module name="MoneyManagement" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tugasbesar.tugasbesar.*" />
+          <option name="PATTERN" value="com.tugasbesar.tugasbesar.Controller.HelloController" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -79,7 +130,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.HelloApplication" />
+        <item itemvalue="Application.com.tugasbesar.tugasbesar.HelloApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -92,10 +143,34 @@
       <option name="presentableId" value="Default" />
       <updated>1660890975480</updated>
       <workItem from="1660890977057" duration="3080000" />
+      <workItem from="1661141809122" duration="4945000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

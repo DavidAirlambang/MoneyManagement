@@ -10,5 +10,7 @@ module com.tugasbesar.tugasbesar {
 
     opens com.tugasbesar.tugasbesar.model;
     opens com.tugasbesar.tugasbesar to javafx.fxml;
+    opens com.tugasbesar.tugasbesar.controller to javafx.fxml;
     exports com.tugasbesar.tugasbesar;
+    exports com.tugasbesar.tugasbesar.controller;
 }
