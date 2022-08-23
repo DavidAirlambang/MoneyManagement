@@ -24,15 +24,13 @@ public class InputController {
 
     public void initialize() {
         // Memasukkan option ke combo box pendapatan / pengeluaran
-        option = FXCollections.observableArrayList();
-        option.add("Pendapatan");
-        option.add("Pengeluaran");
+        option = FXCollections.observableArrayList("Pendapatan","Pengeluaran");
         cmbPendapatanPengeluaran.setItems(option);
         cmbPendapatanPengeluaran.getSelectionModel().select(0);
 
         // Memasukkan option ke combo box tempat penyimpanan saldo
         SaldoDao saldoDao = new SaldoDao();
-        saldoData = (ObservableList<SaldoEntity>) saldoDao.getData();
+        saldoData = FXCollections.observableArrayList(saldoDao.getData());
         cmbTempat.setItems(saldoData);
 
 

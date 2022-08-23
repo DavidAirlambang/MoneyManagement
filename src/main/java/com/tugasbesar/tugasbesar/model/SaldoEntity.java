@@ -59,4 +59,9 @@ public class SaldoEntity {
     public void setTransaksisByIdSaldo(Collection<TransaksiEntity> transaksisByIdSaldo) {
         this.transaksisByIdSaldo = transaksisByIdSaldo;
     }
+
+    @Override
+    public String toString() {
+        return jenisSaldo;
+    }
 }

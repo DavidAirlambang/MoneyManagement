@@ -4,14 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc322d62-c52e-4042-8322-1e08abdf6df8" name="Changes" comment="">
+    <list default="true" id="bc322d62-c52e-4042-8322-1e08abdf6df8" name="Changes" comment="Make PengeluaranController + Filter for pendapatan &amp; pengeluaran">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/controller/InputController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/controller/InputController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/controller/PendapatanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/controller/PendapatanController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/controller/PengeluaranController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/controller/PengeluaranController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/dao/PendapatanDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/dao/PendapatanDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/dao/TransaksiDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/dao/TransaksiDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/model/PengeluaranEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/model/PengeluaranEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/dao/TransaksiDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/dao/TransaksiDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/model/SaldoEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/model/SaldoEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/tugasbesar/tugasbesar/input-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/tugasbesar/tugasbesar/input-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/controller/InputController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/controller/InputController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/controller/PendapatanController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/controller/PendapatanController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/controller/PengeluaranController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/controller/PengeluaranController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/dao/PendapatanDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/dao/PendapatanDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/input-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/input-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/model/SaldoEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/model/SaldoEntity.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,8 +115,16 @@
       <updated>1660890975480</updated>
       <workItem from="1660890977057" duration="3080000" />
       <workItem from="1661141809122" duration="4945000" />
-      <workItem from="1661262353871" duration="2402000" />
+      <workItem from="1661262353871" duration="3364000" />
     </task>
+    <task id="LOCAL-00001" summary="Make PengeluaranController + Filter for pendapatan &amp; pengeluaran">
+      <created>1661267450260</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1661267450260</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,5 +152,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Make PengeluaranController + Filter for pendapatan &amp; pengeluaran" />
+    <option name="LAST_COMMIT_MESSAGE" value="Make PengeluaranController + Filter for pendapatan &amp; pengeluaran" />
   </component>
 </project>

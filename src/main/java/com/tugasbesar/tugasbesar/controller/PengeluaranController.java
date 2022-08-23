@@ -27,8 +27,7 @@ public class PengeluaranController {
         kolomTanggalPengeluaran.setCellValueFactory(new PropertyValueFactory<>("tanggalTransaksi"));
         kolomKeteranganPengeluaran.setCellValueFactory(new PropertyValueFactory<>("keterangan"));
         kolomJenisPengeluaran.setCellValueFactory(new PropertyValueFactory<>("pengeluaranByPengeluaranIdPengeluaran"));
-
-
+        kolomTempatPengeluaran.setCellValueFactory(new PropertyValueFactory<>("saldoBySaldoIdSaldo"));
     }
 
 }
