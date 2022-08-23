@@ -16,6 +16,11 @@ public class PengeluaranEntity {
     @OneToMany(mappedBy = "pengeluaranByPengeluaranIdPengeluaran")
     private Collection<TransaksiEntity> transaksisByIdPengeluaran;
 
+    @Override
+    public String toString() {
+        return jenisPengeluaran;
+    }
+
     public int getIdPengeluaran() {
         return idPengeluaran;
     }

@@ -24,12 +24,8 @@ public class PendapatanController {
 
     public void initialize(){
 
-        PendapatanDao pendapatanDao = new PendapatanDao();
-        pendapatans = FXCollections.observableArrayList(pendapatanDao.getData());
-
         TransaksiDao transaksiDao = new TransaksiDao();
-        transaksis = FXCollections.observableArrayList(transaksiDao.getData());
-        System.out.println(transaksis);
+        transaksis = FXCollections.observableArrayList(transaksiDao.getPendapatanData());
         tabelPendapatan.setItems(transaksis);
         kolomIdTransaksiPendapatan.setCellValueFactory(new PropertyValueFactory<>("idTransaksi"));
         kolomNominalPendapatan.setCellValueFactory(new PropertyValueFactory<>("nominal"));

@@ -1,5 +1,6 @@
 package com.tugasbesar.tugasbesar.dao;
 
+import com.tugasbesar.tugasbesar.model.PendapatanEntity;
 import com.tugasbesar.tugasbesar.model.TransaksiEntity;
 import com.tugasbesar.tugasbesar.utility.HiberUtility;
 import org.hibernate.Session;
@@ -8,6 +9,8 @@ import org.hibernate.Transaction;
 
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Predicate;
+import javax.persistence.criteria.Root;
 import java.util.List;
 
 public class TransaksiDao implements DaoInterface<TransaksiEntity> {
@@ -20,7 +23,45 @@ public class TransaksiDao implements DaoInterface<TransaksiEntity> {
 
         CriteriaBuilder builder = s.getCriteriaBuilder();
         CriteriaQuery q = builder.createQuery(TransaksiEntity.class);
-        q.from(TransaksiEntity.class);
+        Root<PendapatanEntity> root = q.from(TransaksiEntity.class);
+
+        transaksiList = s.createQuery(q).getResultList();
+
+        s.close();
+        return transaksiList;
+    }
+
+    public List<TransaksiEntity> getPendapatanData() {
+        List<TransaksiEntity> transaksiList;
+
+        SessionFactory sf = HiberUtility.getSessionFactory();
+        Session s = sf.openSession();
+
+        CriteriaBuilder builder = s.getCriteriaBuilder();
+        CriteriaQuery q = builder.createQuery(TransaksiEntity.class);
+        Root<PendapatanEntity> root = q.from(TransaksiEntity.class);
+
+        Predicate p1 = builder.isNotNull(root.get("pendapatanByPendapatanIdPendapatan"));
+        q.where(p1);
+
+        transaksiList = s.createQuery(q).getResultList();
+
+        s.close();
+        return transaksiList;
+    }
+
+    public List<TransaksiEntity> getPengeluaranData() {
+        List<TransaksiEntity> transaksiList;
+
+        SessionFactory sf = HiberUtility.getSessionFactory();
+        Session s = sf.openSession();
+
+        CriteriaBuilder builder = s.getCriteriaBuilder();
+        CriteriaQuery q = builder.createQuery(TransaksiEntity.class);
+        Root<PendapatanEntity> root = q.from(TransaksiEntity.class);
+
+        Predicate p1 = builder.isNotNull(root.get("pengeluaranByPengeluaranIdPengeluaran"));
+        q.where(p1);
 
         transaksiList = s.createQuery(q).getResultList();
 
