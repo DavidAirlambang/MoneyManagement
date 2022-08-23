@@ -37,6 +37,7 @@ public class PendapatanController {
         kolomKeteranganPendapatan.setCellValueFactory(new PropertyValueFactory<>("keterangan"));
         kolomJenisPendapatan.setCellValueFactory(new PropertyValueFactory<>("pendapatanByPendapatanIdPendapatan"));
 
+
     }
 
 }

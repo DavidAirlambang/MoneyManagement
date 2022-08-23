@@ -21,13 +21,14 @@ public class HelloController {
     public AnchorPane layerBeranda;
 
     public void initialize() {
-        try {
-            Parent fxml = FXMLLoader.load(getClass().getResource("beranda-view.fxml"));
-            mainArea.getChildren().removeAll();
-            mainArea.getChildren().setAll(fxml);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
+//        Parent fxml = null;
+//        try {
+//            fxml = FXMLLoader.load(getClass().getResource("beranda-view.fxml"));
+//            mainArea.getChildren().removeAll();
+//            mainArea.getChildren().setAll(fxml);
+//        } catch (IOException e) {
+//            throw new RuntimeException(e);
+//        }
     }
 
     public void goToBeranda() {
