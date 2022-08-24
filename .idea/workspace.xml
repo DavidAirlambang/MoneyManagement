@@ -5,17 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc322d62-c52e-4042-8322-1e08abdf6df8" name="Changes" comment="Update Input,Pendapatan,pengeluaran-Controller + TransaksiEntity">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/controller/SignupController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/tugasbesar/tugasbesar/login-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/tugasbesar/tugasbesar/signup-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/gambar/2086.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/30a24153-e70c-4c53-92e1-83a2404b4ee5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/30a24153-e70c-4c53-92e1-83a2404b4ee5.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/controller/SignupController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/controller/SignupController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/dao/UserDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/model/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/model/UserEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +114,8 @@
       <workItem from="1661141809122" duration="4945000" />
       <workItem from="1661262353871" duration="3544000" />
       <workItem from="1661268579171" duration="30000" />
-      <workItem from="1661305819424" duration="7920000" />
+      <workItem from="1661305819424" duration="8110000" />
+      <workItem from="1661350571495" duration="3181000" />
     </task>
     <task id="LOCAL-00001" summary="Make PengeluaranController + Filter for pendapatan &amp; pengeluaran">
       <created>1661267450260</created>

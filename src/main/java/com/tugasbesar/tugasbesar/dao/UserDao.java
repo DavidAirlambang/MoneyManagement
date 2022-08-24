@@ -9,6 +9,9 @@ import org.hibernate.Transaction;
 
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Predicate;
+import javax.persistence.criteria.Root;
+import javax.xml.validation.Validator;
 import java.util.List;
 
 public class UserDao implements DaoInterface<UserEntity> {
@@ -28,6 +31,35 @@ public class UserDao implements DaoInterface<UserEntity> {
         s.close();
         return userList;
     }
+
+    public int Validator(String username,String password){
+
+        int hasil;
+
+        SessionFactory sf = HiberUtility.getSessionFactory();
+        Session s = sf.openSession();
+
+        CriteriaBuilder builder = s.getCriteriaBuilder();
+        CriteriaQuery q = builder.createQuery(UserEntity.class);
+        Root<UserEntity> root = q.from(UserEntity.class);
+
+        Predicate p1 = builder.equal(root.get("username"),username);
+        Predicate p2 = builder.equal(root.get("password"),password);
+        Predicate p3 = builder.and(p1,p2);
+        q.where(p3);
+
+        List test = s.createQuery(q).getResultList();
+        if(test.isEmpty()){
+            hasil = 0;
+        } else {
+            hasil = 1;
+        }
+//        System.out.println(test);
+
+        s.close();
+
+        return hasil;
+    };
 
     @Override
     public int addData(UserEntity data) {
