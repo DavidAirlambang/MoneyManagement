@@ -7,7 +7,7 @@
     <property name="connection.url">jdbc:mysql://localhost:3306/moneymanagementdb</property>
     <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
     <property name="connection.username">root</property>
-    <mapping class="com.tugasbesar.tugasbesar.model.PendapatanEntity"/>
+      <mapping class="com.tugasbesar.tugasbesar.model.PendapatanEntity"/>
       <mapping class="com.tugasbesar.tugasbesar.model.PengeluaranEntity"/>
     <mapping class="com.tugasbesar.tugasbesar.model.SaldoEntity"/>
     <mapping class="com.tugasbesar.tugasbesar.model.TransaksiEntity"/>

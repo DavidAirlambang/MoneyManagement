@@ -1091,7 +1091,7 @@
       <CollationName>utf8_general_ci</CollationName>
     </table>
     <column id="348" parent="343" name="idPendapatan">
-      <AutoIncrement>2</AutoIncrement>
+      <AutoIncrement>4</AutoIncrement>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -1111,7 +1111,7 @@
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="352" parent="344" name="idPengeluaran">
-      <AutoIncrement>2</AutoIncrement>
+      <AutoIncrement>5</AutoIncrement>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -1131,7 +1131,7 @@
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="356" parent="345" name="idSaldo">
-      <AutoIncrement>2</AutoIncrement>
+      <AutoIncrement>7</AutoIncrement>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -1232,7 +1232,7 @@
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="378" parent="347" name="idUser">
-      <AutoIncrement>2</AutoIncrement>
+      <AutoIncrement>5</AutoIncrement>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -1242,12 +1242,16 @@
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <index id="380" parent="347" name="PRIMARY">
+    <column id="380" parent="347" name="password">
+      <DataType>varchar(255)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <index id="381" parent="347" name="PRIMARY">
       <ColNames>idUser</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="381" parent="347" name="PRIMARY">
+    <key id="382" parent="347" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>

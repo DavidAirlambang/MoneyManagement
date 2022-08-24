@@ -15,6 +15,9 @@ public class UserEntity {
     private String username;
     @OneToMany(mappedBy = "userByUserIdUser")
     private Collection<TransaksiEntity> transaksisByIdUser;
+    @Basic
+    @Column(name = "password")
+    private String password;
 
     public int getIdUser() {
         return idUser;
@@ -58,5 +61,13 @@ public class UserEntity {
 
     public void setTransaksisByIdUser(Collection<TransaksiEntity> transaksisByIdUser) {
         this.transaksisByIdUser = transaksisByIdUser;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }

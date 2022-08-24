@@ -4,19 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc322d62-c52e-4042-8322-1e08abdf6df8" name="Changes" comment="Make PengeluaranController + Filter for pendapatan &amp; pengeluaran">
+    <list default="true" id="bc322d62-c52e-4042-8322-1e08abdf6df8" name="Changes" comment="Update Input,Pendapatan,pengeluaran-Controller + TransaksiEntity">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/controller/SignupController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/tugasbesar/tugasbesar/login-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/tugasbesar/tugasbesar/signup-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/gambar/2086.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/30a24153-e70c-4c53-92e1-83a2404b4ee5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/30a24153-e70c-4c53-92e1-83a2404b4ee5.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/controller/InputController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/controller/InputController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/controller/PendapatanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/controller/PendapatanController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/controller/PengeluaranController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/controller/PengeluaranController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/model/SaldoEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/model/SaldoEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/tugasbesar/tugasbesar/input-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/tugasbesar/tugasbesar/input-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/controller/InputController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/controller/InputController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/controller/PendapatanController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/controller/PendapatanController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/controller/PengeluaranController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/controller/PengeluaranController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/dao/PendapatanDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/dao/PendapatanDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/input-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/input-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/model/SaldoEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/model/SaldoEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/model/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/model/UserEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +26,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -78,6 +78,9 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Master\Documents\GitHub\MoneyManagement\src\main\resources\gambar" />
+    </key>
     <key name="ImportMappingsDialog.RecentPackages">
       <recent name="com.tugasbesar.tugasbesar.model" />
       <recent name="" />
@@ -115,7 +118,9 @@
       <updated>1660890975480</updated>
       <workItem from="1660890977057" duration="3080000" />
       <workItem from="1661141809122" duration="4945000" />
-      <workItem from="1661262353871" duration="3364000" />
+      <workItem from="1661262353871" duration="3544000" />
+      <workItem from="1661268579171" duration="30000" />
+      <workItem from="1661305819424" duration="7920000" />
     </task>
     <task id="LOCAL-00001" summary="Make PengeluaranController + Filter for pendapatan &amp; pengeluaran">
       <created>1661267450260</created>
@@ -124,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661267450260</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Update Input,Pendapatan,pengeluaran-Controller + TransaksiEntity">
+      <created>1661268386988</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1661268386988</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,6 +167,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Make PengeluaranController + Filter for pendapatan &amp; pengeluaran" />
-    <option name="LAST_COMMIT_MESSAGE" value="Make PengeluaranController + Filter for pendapatan &amp; pengeluaran" />
+    <MESSAGE value="Update Input,Pendapatan,pengeluaran-Controller + TransaksiEntity" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update Input,Pendapatan,pengeluaran-Controller + TransaksiEntity" />
   </component>
 </project>
