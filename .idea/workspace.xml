@@ -5,11 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc322d62-c52e-4042-8322-1e08abdf6df8" name="Changes" comment="Update Input,Pendapatan,pengeluaran-Controller + TransaksiEntity">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/DashBoardController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/tugasbesar/tugasbesar/temp.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/MenuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/controller/DashboardController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/tugasbesar/tugasbesar/dashboard-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/DashBoardController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/tugasbesar/tugasbesar/temp.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/tugasbesar/tugasbesar/menu-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/controller/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/temp.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,29 +54,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JPA.DatabaseSchemaImportDialog": "30a24153-e70c-4c53-92e1-83a2404b4ee5",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_directory_selection": "C:/Users/Master/Documents/GitHub/MoneyManagement/src/main/java/com/tugasbesar/tugasbesar",
-    "last_opened_file_path": "C:/Users/hp/IdeaProjects/tugas-hibernate-2072038",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JPA.DatabaseSchemaImportDialog&quot;: &quot;30a24153-e70c-4c53-92e1-83a2404b4ee5&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/Users/Master/Documents/GitHub/MoneyManagement/src/main/java/com/tugasbesar/tugasbesar&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/hp/IdeaProjects/tugas-hibernate-2072038&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Master\Documents\GitHub\MoneyManagement\src\main\resources\gambar" />
@@ -117,7 +122,8 @@
       <workItem from="1661268579171" duration="30000" />
       <workItem from="1661305819424" duration="8110000" />
       <workItem from="1661350571495" duration="3235000" />
-      <workItem from="1661403537313" duration="2203000" />
+      <workItem from="1661403537313" duration="4537000" />
+      <workItem from="1661435227874" duration="1612000" />
     </task>
     <task id="LOCAL-00001" summary="Make PengeluaranController + Filter for pendapatan &amp; pengeluaran">
       <created>1661267450260</created>

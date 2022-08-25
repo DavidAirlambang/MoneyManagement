@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #EAFDFF;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tugasbesar.tugasbesar.controller.DashboardController">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="606.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="150.0" prefWidth="200.0">
+               <children>
+                  <HBox prefHeight="150.0" prefWidth="600.0">
+                     <children>
+                        <AnchorPane prefHeight="150.0" prefWidth="300.0">
+                           <children>
+                              <VBox layoutY="35.0" prefHeight="79.0" prefWidth="300.0">
+                                 <children>
+                                    <Label text="Welcome Back" textFill="#00a4c6">
+                                       <font>
+                                          <Font name="Arial Rounded MT Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="username" text="ini ganti nama user" textFill="#37dbff">
+                                       <font>
+                                          <Font name="Arial Rounded MT Bold" size="30.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets left="10.0" top="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                        <Separator orientation="VERTICAL" prefHeight="180.0">
+                           <padding>
+                              <Insets bottom="20.0" top="20.0" />
+                           </padding>
+                        </Separator>
+                        <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="150.0" prefWidth="300.0">
+                           <children>
+                              <VBox layoutY="35.0" prefHeight="79.0" prefWidth="300.0">
+                                 <children>
+                                    <Label text="Total Balance" textFill="#00a4c6">
+                                       <font>
+                                          <Font name="Arial Rounded MT Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <Label text="Rp" textFill="#37dbff">
+                                             <font>
+                                                <Font name="Arial Rounded MT Bold" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="totalBalance" layoutX="10.0" layoutY="10.0" text="Angkanya" textFill="#37dbff">
+                                             <font>
+                                                <Font name="Arial Rounded MT Bold" size="30.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="10.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="10.0" top="5.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="150.0" prefWidth="200.0">
+               <children>
+                  <Label layoutY="6.0" text="Monthly Summary" textFill="#00a4c6">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <HBox layoutY="31.0" prefHeight="120.0" prefWidth="600.0">
+                     <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="220.0">
+                           <children>
+                              <VBox layoutY="14.0" prefHeight="90.0" prefWidth="220.0">
+                                 <children>
+                                    <Label text="Pendapatan" textFill="#66c265">
+                                       <font>
+                                          <Font name="Arial Rounded MT Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <HBox prefHeight="35.0" prefWidth="210.0">
+                                       <children>
+                                          <Label prefHeight="22.0" prefWidth="45.0" text="+ Rp" textFill="#66c265">
+                                             <font>
+                                                <Font name="Arial Rounded MT Bold" size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="pendapatan" layoutX="10.0" layoutY="10.0" text="Pendapatannya" textFill="#66c265">
+                                             <font>
+                                                <Font name="Arial Rounded MT Bold" size="20.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="10.0" top="10.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox alignment="CENTER" layoutX="20.0" layoutY="36.0" prefHeight="23.0" prefWidth="220.0">
+                                       <children>
+                                          <FontAwesomeIconView fill="#66c265" glyphName="MONEY" size="25" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                        <Separator orientation="VERTICAL" prefHeight="200.0">
+                           <padding>
+                              <Insets bottom="10.0" top="10.0" />
+                           </padding>
+                        </Separator>
+                        <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="220.0">
+                           <children>
+                              <VBox layoutY="14.0" prefHeight="90.0" prefWidth="220.0">
+                                 <children>
+                                    <Label text="Pengeluaran" textFill="RED">
+                                       <font>
+                                          <Font name="Arial Rounded MT Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <HBox prefHeight="35.0" prefWidth="200.0">
+                                       <children>
+                                          <Label prefHeight="22.0" prefWidth="43.0" text="- Rp" textFill="RED">
+                                             <font>
+                                                <Font name="Arial Rounded MT Bold" size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="pengeluaran" layoutX="10.0" layoutY="10.0" text="Pengeluaran" textFill="RED">
+                                             <font>
+                                                <Font name="Arial Rounded MT Bold" size="20.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="10.0" top="10.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="23.0" prefWidth="220.0">
+                                       <children>
+                                          <FontAwesomeIconView fill="RED" glyphName="MONEY" size="25" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </AnchorPane>
+                        <Separator layoutX="230.0" layoutY="10.0" orientation="VERTICAL" prefHeight="200.0">
+                           <padding>
+                              <Insets bottom="10.0" top="10.0" />
+                           </padding>
+                        </Separator>
+                        <AnchorPane prefHeight="120.0" prefWidth="130.0">
+                           <children>
+                              <JFXButton fx:id="printReport" layoutY="24.0" onAction="#printReport" prefHeight="59.0" prefWidth="130.0" text="Print Report" textFill="#669ef1">
+                                 <font>
+                                    <Font name="Arial Rounded MT Bold" size="15.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                        </AnchorPane>
+                     </children></HBox>
+                  <Label alignment="CENTER" layoutX="410.0" layoutY="7.0" text="Tanggal :" textFill="#37dbff">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="tanggal" alignment="CENTER" layoutX="469.0" layoutY="7.0" text="tanggal disini" textFill="#37dbff">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Pane prefHeight="74.0" prefWidth="606.0" style="-fx-background-color: #37DBFF;">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Pane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

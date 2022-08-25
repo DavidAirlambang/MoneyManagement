@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+
+<StackPane fx:controller="com.tugasbesar.tugasbesar.MenuController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0">
+         <top>
+            <HBox prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #37DBFF;" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXButton fx:id="dashboardView" onAction="#dashboardView" prefHeight="50.0" prefWidth="200.0" text="Dashboard" textFill="#00a4c6">
+                     <graphic>
+                        <FontAwesomeIconView fill="#00a4c6" glyphName="HOME" size="17" />
+                     </graphic>
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="transactionView" layoutX="10.0" layoutY="10.0" onAction="#transactionView" prefHeight="50.0" prefWidth="200.0" text="Transaction" textFill="#00a4c6">
+                     <graphic>
+                        <FontAwesomeIconView fill="#00a4c6" glyphName="DOLLAR" size="17" />
+                     </graphic>
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="balanceView" layoutX="164.0" layoutY="10.0" onAction="#balanceView" prefHeight="50.0" prefWidth="200.0" text="My Balance" textFill="#00a4c6">
+                     <graphic>
+                        <FontAwesomeIconView fill="#00a4c6" glyphName="MONEY" size="17" />
+                     </graphic>
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </top>
+         <center>
+            <Pane fx:id="layerBeranda" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>
