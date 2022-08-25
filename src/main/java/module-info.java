@@ -7,6 +7,7 @@ module com.tugasbesar.tugasbesar {
     requires java.sql;
     requires org.hibernate.orm.core;
     requires java.naming;
+    requires com.jfoenix;
 
     opens com.tugasbesar.tugasbesar.model;
     opens com.tugasbesar.tugasbesar.dao;
