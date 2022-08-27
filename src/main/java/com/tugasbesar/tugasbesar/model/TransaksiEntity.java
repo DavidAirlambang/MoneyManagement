@@ -2,6 +2,8 @@ package com.tugasbesar.tugasbesar.model;
 
 import javax.persistence.*;
 import java.sql.Date;
+import java.text.NumberFormat;
+import java.util.Locale;
 
 @Entity
 @Table(name = "transaksi", schema = "moneymanagementdb", catalog = "")
@@ -119,6 +121,11 @@ public class TransaksiEntity {
 
     public void setPengeluaranByPengeluaranIdPengeluaran(PengeluaranEntity pengeluaranByPengeluaranIdPengeluaran) {
         this.pengeluaranByPengeluaranIdPengeluaran = pengeluaranByPengeluaranIdPengeluaran;
+    }
+
+    public String getNominalString() {
+        NumberFormat cFormatter = NumberFormat.getCurrencyInstance(Locale.getDefault());
+        return cFormatter.format(getNominal());
     }
 
     @Override

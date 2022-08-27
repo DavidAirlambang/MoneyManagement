@@ -79,7 +79,7 @@ public class SignupController {
 
         Parent newRoot = null;
         try {
-            newRoot = FXMLLoader.load(HelloApplication.class.getResource("main-view.fxml"));
+            newRoot = FXMLLoader.load(HelloApplication.class.getResource("menu-view.fxml"));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

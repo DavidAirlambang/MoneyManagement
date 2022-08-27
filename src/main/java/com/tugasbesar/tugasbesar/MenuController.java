@@ -39,6 +39,15 @@ public class MenuController {
     }
 
     public void transactionView(ActionEvent actionEvent) {
+
+        try {
+            Parent fxml = FXMLLoader.load(getClass().getResource("transaction-view.fxml"));
+            layerBeranda.getChildren().removeAll();
+            layerBeranda.getChildren().setAll(fxml);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
     }
 
     public void balanceView(ActionEvent actionEvent) {

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
-<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Separator?>
@@ -11,9 +10,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #EAFDFF;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tugasbesar.tugasbesar.controller.DashboardController">
+<AnchorPane prefHeight="450.0" prefWidth="640.0" style="-fx-background-color: #EAFDFF;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tugasbesar.tugasbesar.controller.DashboardController">
    <children>
-      <VBox prefHeight="400.0" prefWidth="606.0" AnchorPane.topAnchor="0.0">
+      <VBox prefHeight="435.0" prefWidth="640.0" AnchorPane.topAnchor="0.0">
          <children>
             <AnchorPane prefHeight="150.0" prefWidth="200.0">
                <children>
