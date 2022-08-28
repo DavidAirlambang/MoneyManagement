@@ -1,34 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="400.0" prefWidth="446.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="com.tugasbesar.tugasbesar.controller.SaldoController">
+<AnchorPane prefHeight="400.0" prefWidth="667.0" style="-fx-background-color: #EAFDFF;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tugasbesar.tugasbesar.controller.SaldoController">
     <children>
-        <Text fill="#d11717" layoutX="39.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rangkuman Data">
-            <font>
-                <Font name="GeoSlab703 MdCn BT Bold" size="29.0"/>
-            </font>
-        </Text>
-        <Text layoutX="39.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Pengeluaran">
-            <font>
-                <Font name="GeoSlab703 MdCn BT Bold" size="18.0"/>
-            </font>
-        </Text>
-        <Text layoutX="39.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Pendapatan">
-            <font>
-                <Font name="GeoSlab703 MdCn BT Bold" size="18.0"/>
-            </font>
-        </Text>
-        <TextField fx:id="txtTotalPengeluaran" layoutX="165.0" layoutY="106.0"/>
-        <TextField fx:id="txtTotalPendapatan" layoutX="165.0" layoutY="148.0"/>
-        <Text fill="#d11717" layoutX="39.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rincian Saldo">
-            <font>
-                <Font name="GeoSlab703 MdCn BT Bold" size="23.0"/>
-            </font>
-        </Text>
+      <Text fill="#00a4c6" layoutX="69.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Balance">
+         <font>
+            <Font name="GeoSlab703 MdCn BT Bold" size="29.0" />
+         </font>
+      </Text>
+      <Text fx:id="labelTotalBalance" fill="#68bde2" layoutX="69.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rp." wrappingWidth="198.61338424682617">
+         <font>
+            <Font name="Segoe UI Bold" size="22.0" />
+         </font>
+      </Text>
+      <Line endX="-8.85711669921875" endY="104.29290771484375" layoutX="308.0" layoutY="94.0" startX="-8.857147216796875" startY="-54.999996185302734" stroke="#96d0f7" />
+      <Text fill="#00a4c6" layoutX="310.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Based on Location">
+         <font>
+            <Font name="GeoSlab703 MdCn BT Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text fill="#636ebe" layoutX="310.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pilih Tempat">
+         <font>
+            <Font name="Microsoft Sans Serif" size="14.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="cmbTempat" layoutX="429.0" layoutY="100.0" onAction="#getChosenTempat" prefWidth="150.0" />
+      <Text fx:id="labelSaldoTempat" fill="#68bde2" layoutX="309.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gopay" wrappingWidth="239.7562370300293">
+         <font>
+            <Font name="Segoe UI" size="23.0" />
+         </font>
+      </Text>
+      <Line endX="-173.7142791748047" endY="-54.999996185302734" layoutX="232.0" layoutY="254.0" startX="375.71429443359375" startY="-55.0" stroke="#96d0f7" />
+      <Text fill="#00a4c6" layoutX="69.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pendapatan">
+         <font>
+            <Font name="GeoSlab703 MdCn BT Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text fill="#636ebe" layoutX="69.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pilih Jenis">
+         <font>
+            <Font name="Microsoft Sans Serif" size="14.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="cmbSaldoJenisPendapatan" layoutX="159.0" layoutY="249.0" onAction="#getChosenJenisPendapatan" prefHeight="25.0" prefWidth="144.0" />
+      <Line endX="-8.85711669921875" endY="104.29290771484375" layoutX="358.0" layoutY="255.0" startX="-8.857147216796875" startY="-54.999996185302734" stroke="#96d0f7" />
+      <Text fill="#00a4c6" layoutX="368.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pengeluaran">
+         <font>
+            <Font name="GeoSlab703 MdCn BT Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text fill="#636ebe" layoutX="368.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pilih Jenis">
+         <font>
+            <Font name="Microsoft Sans Serif" size="14.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="cmbSaldoJenisPengeluaran" layoutX="454.0" layoutY="249.0" onAction="#getChosenJenisPengeluaran" prefHeight="25.0" prefWidth="144.0" />
+      <Text fx:id="labelSaldoJenisPendapatan" fill="#68bde2" layoutX="69.0" layoutY="303.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gaji" wrappingWidth="239.7562370300293">
+         <font>
+            <Font name="Segoe UI" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="labelSaldoJenisPengeluaran" fill="#68bde2" layoutX="368.0" layoutY="303.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Makan Minum" wrappingWidth="239.7562370300293">
+         <font>
+            <Font name="Segoe UI" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="labelSaldoPendapatan" fill="#68bde2" layoutX="69.0" layoutY="332.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rp 10.000.000,00" wrappingWidth="239.7562370300293">
+         <font>
+            <Font name="Segoe UI Bold" size="22.0" />
+         </font>
+      </Text>
+      <Text fx:id="labelSaldoPengeluaran" fill="#68bde2" layoutX="368.0" layoutY="331.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rp 10.000.000,00" wrappingWidth="239.7562370300293">
+         <font>
+            <Font name="Segoe UI Bold" size="22.0" />
+         </font>
+      </Text>
+      <Text fx:id="labelSaldoNominalTempat" fill="#68bde2" layoutX="400.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rp. 1.000.000,00" wrappingWidth="239.7562370300293">
+         <font>
+            <Font name="Segoe UI Bold" size="23.0" />
+         </font>
+      </Text>
     </children>
 </AnchorPane>

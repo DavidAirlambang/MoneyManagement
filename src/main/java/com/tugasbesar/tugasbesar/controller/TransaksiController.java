@@ -6,6 +6,7 @@ import com.tugasbesar.tugasbesar.dao.UserDao;
 import com.tugasbesar.tugasbesar.model.*;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 
@@ -54,4 +55,18 @@ public class TransaksiController {
         columnTempat.setCellValueFactory(new PropertyValueFactory<>("saldoBySaldoIdSaldo"));
     }
 
+    public void filterJenisData(ActionEvent actionEvent) {
+        int selectedIndex = cmbFilter.getSelectionModel().getSelectedIndex();
+        TransaksiDao transaksiDao = new TransaksiDao();
+        if (selectedIndex == 0) {
+            transaksis = FXCollections.observableArrayList(transaksiDao.getPendapatanData());
+        } else if (selectedIndex == 1) {
+            transaksis = FXCollections.observableArrayList(transaksiDao.getPengeluaranData());
+        }
+        tabelTransaksi.setItems(transaksis);
+        columnNominal.setCellValueFactory(new PropertyValueFactory<>("nominalString"));
+        columnTanggal.setCellValueFactory(new PropertyValueFactory<>("tanggalTransaksi"));
+        columnKeterangan.setCellValueFactory(new PropertyValueFactory<>("keterangan"));
+        columnTempat.setCellValueFactory(new PropertyValueFactory<>("saldoBySaldoIdSaldo"));
+    }
 }

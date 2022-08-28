@@ -69,7 +69,7 @@
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                </padding>
             </TableView>
-            <ComboBox fx:id="cmbFilter" layoutX="502.0" layoutY="20.0" prefWidth="150.0" />
+            <ComboBox fx:id="cmbFilter"  onAction="#filterJenisData" layoutX="502.0" layoutY="20.0" prefWidth="150.0" />
          </children>
       </AnchorPane>
    </children>

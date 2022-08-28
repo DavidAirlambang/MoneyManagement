@@ -51,5 +51,12 @@ public class MenuController {
     }
 
     public void balanceView(ActionEvent actionEvent) {
+        try {
+            Parent fxml = FXMLLoader.load(getClass().getResource("saldo-view.fxml"));
+            layerBeranda.getChildren().removeAll();
+            layerBeranda.getChildren().setAll(fxml);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
