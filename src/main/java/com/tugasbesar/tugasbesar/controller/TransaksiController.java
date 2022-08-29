@@ -4,14 +4,27 @@ import com.tugasbesar.tugasbesar.dao.SaldoDao;
 import com.tugasbesar.tugasbesar.dao.TransaksiDao;
 import com.tugasbesar.tugasbesar.dao.UserDao;
 import com.tugasbesar.tugasbesar.model.*;
+import com.tugasbesar.tugasbesar.utility.HiberUtility;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import net.sf.jasperreports.engine.JRException;
+import net.sf.jasperreports.engine.JasperFillManager;
+import net.sf.jasperreports.engine.JasperPrint;
+import net.sf.jasperreports.view.JasperViewer;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.util.HashMap;
+import java.util.Map;
 
 public class TransaksiController {
     public TextField inputIdTransaksi;
@@ -28,6 +41,7 @@ public class TransaksiController {
     public TableColumn columnKeterangan;
     public TableColumn columnTempat;
     public ComboBox<String> cmbFilter;
+    public Button printReport;
 
     ObservableList<String> option;
     ObservableList<SaldoEntity> saldoData;
@@ -68,5 +82,42 @@ public class TransaksiController {
         columnTanggal.setCellValueFactory(new PropertyValueFactory<>("tanggalTransaksi"));
         columnKeterangan.setCellValueFactory(new PropertyValueFactory<>("keterangan"));
         columnTempat.setCellValueFactory(new PropertyValueFactory<>("saldoBySaldoIdSaldo"));
+    }
+
+    public void printReport(ActionEvent actionEvent) throws JRException, SQLException {
+
+        JasperPrint jasperPrint;
+        Connection conn = DriverManager.getConnection(
+                "jdbc:mysql://localhost:3306/moneymanagementdb",
+                "root",""
+        );
+        Map param = new HashMap();
+        param.put("user",loggedIn());
+
+        System.out.println(cmbFilter.getValue());
+        if (cmbFilter.getValue() == "Pendapatan") {
+            jasperPrint = JasperFillManager.fillReport("reports/LaporanPendapatan.jasper", param, conn);
+        } else {
+            jasperPrint = JasperFillManager.fillReport("reports/LaporanPengeluaran.jasper", param, conn);
+        }
+        JasperViewer viewer = new JasperViewer(jasperPrint,false);
+        viewer.setTitle("Group Report");
+        viewer.setVisible(true);
+
+    }
+
+    public String loggedIn(){
+
+        String nama;
+        BufferedReader reader;
+        String filename = "data/logged.txt";
+        try {
+            reader = new BufferedReader(new FileReader(filename));
+            String json = reader.readLine();
+            nama = json;
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        return nama;
     }
 }

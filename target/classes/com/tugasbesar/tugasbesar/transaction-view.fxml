@@ -12,7 +12,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #EAFDFF;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tugasbesar.tugasbesar.controller.TransaksiController">
+<AnchorPane prefHeight="450.0" prefWidth="650.0" style="-fx-background-color: #EAFDFF;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tugasbesar.tugasbesar.controller.TransaksiController">
    <children>
       <AnchorPane layoutX="-26.0" prefHeight="400.0" prefWidth="600.0">
          <children>
@@ -57,7 +57,7 @@
                </font>
             </Label>
             <ComboBox fx:id="cmbTempat" layoutX="133.0" layoutY="298.0" prefHeight="25.0" prefWidth="117.0" />
-            <Button fx:id="btnSaveData" layoutX="97.0" layoutY="346.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="117.0" text="Save Data" />
+            <Button fx:id="btnSaveData" layoutX="39.0" layoutY="346.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="89.0" text="Save Data" />
             <TableView fx:id="tabelTransaksi" layoutX="262.0" layoutY="41.0" prefHeight="339.0" prefWidth="404.0" style="-fx-background-color: #EAFDFF;">
               <columns>
                 <TableColumn fx:id="columnNominal" prefWidth="100.66668701171875" style="-fx-background-color: #37DBFF;" text="Nominal" />
@@ -69,7 +69,8 @@
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                </padding>
             </TableView>
-            <ComboBox fx:id="cmbFilter"  onAction="#filterJenisData" layoutX="502.0" layoutY="20.0" prefWidth="150.0" />
+            <ComboBox fx:id="cmbFilter" layoutX="502.0" layoutY="20.0" onAction="#filterJenisData" prefWidth="150.0" />
+            <Button fx:id="printReport" layoutX="147.0" layoutY="346.0" mnemonicParsing="false" onAction="#printReport" prefHeight="26.0" prefWidth="104.0" text="Print Report" />
          </children>
       </AnchorPane>
    </children>

@@ -23,10 +23,6 @@ import java.security.NoSuchAlgorithmException;
 
 public class LoginController {
     public PasswordField password;
-
-    public TextField getColUsername() {
-        return colUsername;
-    }
     public TextField colUsername;
     public Pane root;
     private ObservableList<UserEntity> users;

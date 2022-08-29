@@ -9,6 +9,7 @@ module com.tugasbesar.tugasbesar {
     requires java.naming;
     requires com.jfoenix;
     requires com.google.gson;
+    requires jasperreports;
 
     opens com.tugasbesar.tugasbesar.model;
     opens com.tugasbesar.tugasbesar.dao;

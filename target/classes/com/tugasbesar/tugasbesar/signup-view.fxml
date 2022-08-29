@@ -53,7 +53,7 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                             </rowConstraints>
                             <children>
-                                <PasswordField fx:id="password" prefHeight="30.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                <PasswordField fx:id="password" focusTraversable="false" prefHeight="30.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                                 <Label text="Username " textFill="#c1faff">
                                     <font>
                                         <Font name="Arial Rounded MT Bold" size="15.0" />
@@ -65,7 +65,7 @@
                                     </font>
                                 </Label>
                                 <TextField fx:id="username" prefHeight="30.0" prefWidth="200.0" GridPane.columnIndex="1" />
-                        <PasswordField fx:id="passwordConfirm" layoutX="105.0" layoutY="57.0" prefHeight="30.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <PasswordField fx:id="passwordConfirm" focusTraversable="false" layoutX="105.0" layoutY="57.0" prefHeight="30.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                         <VBox alignment="CENTER_LEFT" prefHeight="18.0" prefWidth="95.0" GridPane.rowIndex="2">
                            <children>
                               <Label text="Confirm" textFill="#c1faff">

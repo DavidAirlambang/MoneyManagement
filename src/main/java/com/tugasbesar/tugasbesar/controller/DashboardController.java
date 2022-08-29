@@ -9,7 +9,12 @@ import com.tugasbesar.tugasbesar.dao.UserDao;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -31,6 +36,7 @@ public class DashboardController {
     public int sumPengeluaran;
     public int sumNominal;
     public Label tanggal;
+    public Button signOut;
 
     public void initialize() {
         // Menampilkan Total Balance
@@ -64,5 +70,15 @@ public class DashboardController {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    public void signOut(ActionEvent actionEvent) throws IOException {
+        username.getScene().getWindow().hide();
+        Stage stage = new Stage();
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("login-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(),640, 430);
+        stage.initStyle(StageStyle.UNDECORATED);
+        stage.setScene(scene);
+        stage.show();
     }
 }
