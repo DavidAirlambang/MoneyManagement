@@ -19,6 +19,11 @@ public class UserEntity {
     @Column(name = "password")
     private String password;
 
+    @Override
+    public String toString() {
+        return username;
+    }
+
     public int getIdUser() {
         return idUser;
     }
@@ -71,12 +76,4 @@ public class UserEntity {
         this.password = password;
     }
 
-    @Override
-    public String toString() {
-        return "UserEntity{" +
-                "idUser=" + idUser +
-                ", username='" + username + '\'' +
-                ", password='" + password + '\'' +
-                '}';
-    }
 }

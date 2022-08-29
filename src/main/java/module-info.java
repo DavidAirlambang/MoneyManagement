@@ -8,6 +8,7 @@ module com.tugasbesar.tugasbesar {
     requires org.hibernate.orm.core;
     requires java.naming;
     requires com.jfoenix;
+    requires com.google.gson;
 
     opens com.tugasbesar.tugasbesar.model;
     opens com.tugasbesar.tugasbesar.dao;

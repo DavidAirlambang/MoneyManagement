@@ -62,6 +62,16 @@
             <artifactId>fontawesomefx-fontawesome</artifactId>
             <version>4.7.0-9.1.2</version>
         </dependency>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.9.0</version>
+        </dependency>
+        <dependency>
+            <groupId>ru.oleg-cherednik.gson</groupId>
+            <artifactId>gson-utils</artifactId>
+            <version>2.2</version>
+        </dependency>
 
     </dependencies>
 
