@@ -92,7 +92,7 @@
       <option name="ALTERNATIVE_JRE_PATH" value="17" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.tugasbesar.tugasbesar.HelloApplication" />
-      <module name="TugasBesar" />
+      <module name="MoneyManagement" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.tugasbesar.tugasbesar.Controller.HelloController" />
@@ -137,6 +137,7 @@
       <workItem from="1661860505655" duration="3999000" />
       <workItem from="1661870909254" duration="6991000" />
       <workItem from="1661878656897" duration="2533000" />
+      <workItem from="1661890509619" duration="3366000" />
     </task>
     <task id="LOCAL-00001" summary="Make PengeluaranController + Filter for pendapatan &amp; pengeluaran">
       <created>1661267450260</created>

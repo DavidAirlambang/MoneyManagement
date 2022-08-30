@@ -1,9 +1,6 @@
 package com.tugasbesar.tugasbesar.dao;
 
-import com.tugasbesar.tugasbesar.model.PendapatanEntity;
-import com.tugasbesar.tugasbesar.model.PengeluaranEntity;
-import com.tugasbesar.tugasbesar.model.SaldoEntity;
-import com.tugasbesar.tugasbesar.model.TransaksiEntity;
+import com.tugasbesar.tugasbesar.model.*;
 import com.tugasbesar.tugasbesar.utility.HiberUtility;
 import javafx.collections.ObservableList;
 import org.hibernate.Session;
@@ -87,6 +84,25 @@ public class TransaksiDao implements DaoInterface<TransaksiEntity> {
         Root<PengeluaranEntity> root = q.from(TransaksiEntity.class);
 
         Predicate p1 = builder.isNotNull(root.get("pengeluaranByPengeluaranIdPengeluaran"));
+        q.where(p1);
+
+        transaksiList = s.createQuery(q).getResultList();
+
+        s.close();
+        return transaksiList;
+    }
+
+    public List<TransaksiEntity> getDataByUser(UserEntity user) {
+        List<TransaksiEntity> transaksiList;
+
+        SessionFactory sf = HiberUtility.getSessionFactory();
+        Session s = sf.openSession();
+
+        CriteriaBuilder builder = s.getCriteriaBuilder();
+        CriteriaQuery q = builder.createQuery(TransaksiEntity.class);
+        Root<TransaksiEntity> root = q.from(TransaksiEntity.class);
+
+        Predicate p1 = builder.equal(root.get("UserByUserIdUser"), user);
         q.where(p1);
 
         transaksiList = s.createQuery(q).getResultList();

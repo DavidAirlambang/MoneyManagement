@@ -1,0 +1,27 @@
+<component name="libraryTable">
+  <library name="net.sf.jasperreports1" type="repository">
+    <properties maven-id="net.sf.jasperreports:jasperreports:6.20.0" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/jasperreports-6.20.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-beanutils-1.9.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-collections-3.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-digester-2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-logging-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-collections4-4.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/itext-2.1.7.js10.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/bcprov-jdk15on-1.70.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/bcutil-jdk15on-1.70.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jcommon-1.0.23.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jfreechart-1.0.19.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ecj-3.21.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jackson-core-2.13.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jackson-databind-2.13.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jackson-annotations-2.13.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jackson-dataformat-xml-2.13.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/stax2-api-4.2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/woodstox-core-6.2.7.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

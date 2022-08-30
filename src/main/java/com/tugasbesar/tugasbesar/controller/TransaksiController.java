@@ -49,6 +49,7 @@ public class TransaksiController {
     ObservableList<PengeluaranEntity> pengeluaranData;
     private ObservableList<TransaksiEntity> transaksis;
     private ObservableList<UserEntity> users;
+    private UserEntity loggedUser;
 
     public void initialize() {
         // Memasukkan option ke combo box pendapatan / pengeluaran
@@ -69,10 +70,17 @@ public class TransaksiController {
         cmbTempat.getSelectionModel().select(0);
 
         UserDao userDao = new UserDao();
+        users = FXCollections.observableArrayList(userDao.getData());
         String nama = userDao.UserLogged(loggedIn());
+        users.forEach((u) -> {
+            if (u.getUsername() == nama) {
+                loggedUser = u;
+            }
+        });
 
         TransaksiDao transaksiDao = new TransaksiDao();
         transaksis = FXCollections.observableArrayList(transaksiDao.getData());
+//        transaksis = FXCollections.observableArrayList(transaksiDao.getDataByUser(loggedUser));
         tabelTransaksi.setItems(transaksis);
         columnNominal.setCellValueFactory(new PropertyValueFactory<>("nominalString"));
         columnTanggal.setCellValueFactory(new PropertyValueFactory<>("tanggalTransaksi"));

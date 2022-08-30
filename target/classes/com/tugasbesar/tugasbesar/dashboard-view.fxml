@@ -119,9 +119,9 @@
                                        </VBox.margin>
                                     </HBox>
                                     <HBox alignment="CENTER" layoutX="20.0" layoutY="36.0" prefHeight="23.0" prefWidth="220.0">
-<!--                                       <children>-->
-<!--                                          <FontAwesomeIconView fill="#66c265" glyphName="MONEY" size="25" />-->
-<!--                                       </children>-->
+                                       <children>
+                                          <FontAwesomeIconView fill="#66c265" glyphName="MONEY" size="25" />
+                                       </children>
                                     </HBox>
                                  </children>
                               </VBox>
@@ -159,9 +159,9 @@
                                        </VBox.margin>
                                     </HBox>
                                     <HBox alignment="CENTER" prefHeight="23.0" prefWidth="220.0">
-<!--                                       <children>-->
-<!--                                          <FontAwesomeIconView fill="RED" glyphName="MONEY" size="25" />-->
-<!--                                       </children>-->
+                                       <children>
+                                          <FontAwesomeIconView fill="RED" glyphName="MONEY" size="25" />
+                                       </children>
                                     </HBox>
                                  </children>
                               </VBox>
