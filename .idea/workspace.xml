@@ -4,30 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc322d62-c52e-4042-8322-1e08abdf6df8" name="Changes" comment="Update Input,Pendapatan,pengeluaran-Controller + TransaksiEntity">
-      <change afterPath="$PROJECT_DIR$/reports/LaporanPendapatan.jasper" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/LaporanPengeluaran.jasper" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/controller/DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/controller/DashboardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/controller/TransaksiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/controller/TransaksiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/tugasbesar/tugasbesar/dashboard-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/tugasbesar/tugasbesar/dashboard-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/tugasbesar/tugasbesar/login-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/tugasbesar/tugasbesar/login-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/tugasbesar/tugasbesar/signup-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/tugasbesar/tugasbesar/signup-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/tugasbesar/tugasbesar/transaction-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/tugasbesar/tugasbesar/transaction-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/HelloApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/HelloApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/controller/DashboardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/controller/DashboardController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/controller/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/controller/TransaksiController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/controller/TransaksiController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/dashboard-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/dashboard-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/login-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/login-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/signup-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/signup-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/transaction-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tugasbesar/tugasbesar/transaction-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
-    </list>
+    <list default="true" id="bc322d62-c52e-4042-8322-1e08abdf6df8" name="Changes" comment="Update Input,Pendapatan,pengeluaran-Controller + TransaksiEntity" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,30 +43,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;JPA.DatabaseSchemaImportDialog&quot;: &quot;30a24153-e70c-4c53-92e1-83a2404b4ee5&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_directory_selection&quot;: &quot;C:/Users/Master/Documents/GitHub/MoneyManagement/src/main/java/com/tugasbesar/tugasbesar&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Master/Documents/GitHub/MoneyManagement/reports&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Downloaded.Files.Path.Enabled": "true",
+    "JPA.DatabaseSchemaImportDialog": "30a24153-e70c-4c53-92e1-83a2404b4ee5",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_directory_selection": "C:/Users/Master/Documents/GitHub/MoneyManagement/src/main/java/com/tugasbesar/tugasbesar",
+    "last_opened_file_path": "C:/Users/hp/IdeaProjects/tugas-hibernate-2072038",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Master\Documents\GitHub\MoneyManagement\reports" />
@@ -111,7 +92,7 @@
       <option name="ALTERNATIVE_JRE_PATH" value="17" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.tugasbesar.tugasbesar.HelloApplication" />
-      <module name="MoneyManagement" />
+      <module name="TugasBesar" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.tugasbesar.tugasbesar.Controller.HelloController" />
@@ -151,6 +132,8 @@
       <workItem from="1661737471830" duration="2882000" />
       <workItem from="1661744303150" duration="12600000" />
       <workItem from="1661783131107" duration="334000" />
+      <workItem from="1661787490129" duration="5790000" />
+      <workItem from="1661846706693" duration="6617000" />
     </task>
     <task id="LOCAL-00001" summary="Make PengeluaranController + Filter for pendapatan &amp; pengeluaran">
       <created>1661267450260</created>

@@ -5,6 +5,7 @@ import com.tugasbesar.tugasbesar.model.PengeluaranEntity;
 import com.tugasbesar.tugasbesar.model.SaldoEntity;
 import com.tugasbesar.tugasbesar.model.TransaksiEntity;
 import com.tugasbesar.tugasbesar.utility.HiberUtility;
+import javafx.collections.ObservableList;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;

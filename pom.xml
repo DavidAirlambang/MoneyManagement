@@ -72,11 +72,6 @@
             <artifactId>gson-utils</artifactId>
             <version>2.2</version>
         </dependency>
-        <dependency>
-            <groupId>net.sf.jasperreports</groupId>
-            <artifactId>jasperreports-castor</artifactId>
-            <version>6.20.0</version>
-        </dependency>
 
     </dependencies>
 

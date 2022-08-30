@@ -1,6 +1,8 @@
 package com.tugasbesar.tugasbesar.dao;
 
 import com.tugasbesar.tugasbesar.model.PendapatanEntity;
+import com.tugasbesar.tugasbesar.model.PengeluaranEntity;
+import com.tugasbesar.tugasbesar.model.TransaksiEntity;
 import com.tugasbesar.tugasbesar.model.UserEntity;
 import com.tugasbesar.tugasbesar.utility.HiberUtility;
 import org.hibernate.Session;
@@ -60,6 +62,30 @@ public class UserDao implements DaoInterface<UserEntity> {
 
         return hasil;
     };
+
+    public String UserLogged(String username) {
+        String nama;
+
+        SessionFactory sf = HiberUtility.getSessionFactory();
+        Session s = sf.openSession();
+
+        CriteriaBuilder builder = s.getCriteriaBuilder();
+        CriteriaQuery q = builder.createQuery(UserEntity.class);
+        Root<UserEntity> root = q.from(UserEntity.class);
+
+        Predicate p1 = builder.equal(root.get("username"), username);
+        q.where(p1);
+
+        nama = String.valueOf(s.createQuery(q).getResultList());
+        System.out.println(nama);
+
+        s.close();
+        if (nama != null) {
+            return nama;
+        } else {
+            return "";
+        }
+    }
 
     @Override
     public int addData(UserEntity data) {

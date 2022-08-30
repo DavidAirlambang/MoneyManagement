@@ -1,12 +1,11 @@
 package com.tugasbesar.tugasbesar.controller;
 
-import com.tugasbesar.tugasbesar.dao.SaldoDao;
-import com.tugasbesar.tugasbesar.dao.TransaksiDao;
-import com.tugasbesar.tugasbesar.dao.UserDao;
+import com.tugasbesar.tugasbesar.dao.*;
 import com.tugasbesar.tugasbesar.model.*;
 import com.tugasbesar.tugasbesar.utility.HiberUtility;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.collections.transformation.FilteredList;
 import javafx.event.ActionEvent;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -21,10 +20,11 @@ import java.io.IOException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.sql.Connection;
+import java.sql.Date;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import java.util.HashMap;
-import java.util.Map;
+import java.text.NumberFormat;
+import java.util.*;
 
 public class TransaksiController {
     public TextField inputIdTransaksi;
@@ -44,9 +44,14 @@ public class TransaksiController {
     public Button printReport;
 
     ObservableList<String> option;
+    ObservableList jenis;
     ObservableList<SaldoEntity> saldoData;
+    ObservableList<PendapatanEntity> pendapatanData;
+    ObservableList<PengeluaranEntity> pengeluaranData;
     private ObservableList<TransaksiEntity> transaksis;
     private ObservableList<UserEntity> users;
+
+    private FilteredList<UserEntity> filteredUser;
 
     public void initialize() {
         // Memasukkan option ke combo box pendapatan / pengeluaran
@@ -54,11 +59,28 @@ public class TransaksiController {
         cmbFilter.setItems(option);
         cmbFilter.getSelectionModel().select(0);
 
+        // Memasukkan option ke combo box jenis
+        PendapatanDao pendapatanDao = new PendapatanDao();
+        PengeluaranDao pengeluaranDao = new PengeluaranDao();
+        pendapatanData = FXCollections.observableArrayList(pendapatanDao.getData());
+        pengeluaranData = FXCollections.observableArrayList(pengeluaranDao.getData());
+        //        jenis = FXCollections.observableArrayList(pendapatanData, pengeluaranData);
+        pendapatanData.forEach((i) -> {
+            jenis = FXCollections.observableArrayList(pendapatanData);
+        });
+        pengeluaranData.forEach((i) -> {
+            jenis = FXCollections.observableArrayList(pengeluaranData);
+        });
+        cmbJenis.setItems(jenis);
+
         // Memasukkan option ke combo box tempat penyimpanan saldo
         SaldoDao saldoDao = new SaldoDao();
         saldoData = FXCollections.observableArrayList(saldoDao.getData());
         cmbTempat.setItems(saldoData);
         cmbTempat.getSelectionModel().select(0);
+
+        UserDao userDao = new UserDao();
+        String nama = userDao.UserLogged(loggedIn());
 
         TransaksiDao transaksiDao = new TransaksiDao();
         transaksis = FXCollections.observableArrayList(transaksiDao.getData());
@@ -119,5 +141,20 @@ public class TransaksiController {
             throw new RuntimeException(e);
         }
         return nama;
+    }
+
+    public void saveData(ActionEvent actionEvent) {
+        TransaksiDao dao = new TransaksiDao();
+        TransaksiEntity t = new TransaksiEntity();
+        t.setNominal(Integer.valueOf(inputNominal.getText()));
+        t.setTanggalTransaksi(Date.valueOf(inputTanggal.getValue()));
+        t.setKeterangan(inputKeterangan.getText());
+        int hasil = dao.addData(t);
+        transaksis = FXCollections.observableArrayList(dao.getData());
+        tabelTransaksi.setItems(transaksis);
+        if (hasil > 0) {
+            Alert alert = new Alert(Alert.AlertType.INFORMATION, "Berhasil Add Data", ButtonType.OK);
+            alert.showAndWait();
+        }
     }
 }

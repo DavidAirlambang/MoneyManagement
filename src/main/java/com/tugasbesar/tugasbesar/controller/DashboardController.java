@@ -54,7 +54,6 @@ public class DashboardController {
         SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy");
         String format = formatter.format(date);
         tanggal.setText(format);
-
     }
 
     public void printReport(ActionEvent actionEvent) {
