@@ -56,7 +56,6 @@ public class UserDao implements DaoInterface<UserEntity> {
         } else {
             hasil = 1;
         }
-//        System.out.println(test);
 
         s.close();
 
@@ -77,7 +76,6 @@ public class UserDao implements DaoInterface<UserEntity> {
         q.where(p1);
 
         nama = String.valueOf(s.createQuery(q).getResultList());
-        System.out.println(nama);
 
         s.close();
         if (nama != null) {

@@ -55,7 +55,7 @@ public class TransaksiController {
 
     public void initialize() {
         // Memasukkan option ke combo box pendapatan / pengeluaran
-        option = FXCollections.observableArrayList("Pendapatan","Pengeluaran");
+        option = FXCollections.observableArrayList("All","Pendapatan", "Pengeluaran");
         cmbFilter.setItems(option);
         cmbFilter.getSelectionModel().select(0);
 
@@ -65,13 +65,6 @@ public class TransaksiController {
         pendapatanData = FXCollections.observableArrayList(pendapatanDao.getData());
         pengeluaranData = FXCollections.observableArrayList(pengeluaranDao.getData());
         //        jenis = FXCollections.observableArrayList(pendapatanData, pengeluaranData);
-        pendapatanData.forEach((i) -> {
-            jenis = FXCollections.observableArrayList(pendapatanData);
-        });
-        pengeluaranData.forEach((i) -> {
-            jenis = FXCollections.observableArrayList(pengeluaranData);
-        });
-        cmbJenis.setItems(jenis);
 
         // Memasukkan option ke combo box tempat penyimpanan saldo
         SaldoDao saldoDao = new SaldoDao();
@@ -95,10 +88,24 @@ public class TransaksiController {
         int selectedIndex = cmbFilter.getSelectionModel().getSelectedIndex();
         TransaksiDao transaksiDao = new TransaksiDao();
         if (selectedIndex == 0) {
-            transaksis = FXCollections.observableArrayList(transaksiDao.getPendapatanData());
+            printReport.setDisable(true);
+            transaksis = FXCollections.observableArrayList(transaksiDao.getData());
         } else if (selectedIndex == 1) {
+            printReport.setDisable(false);
             transaksis = FXCollections.observableArrayList(transaksiDao.getPengeluaranData());
+            pengeluaranData.forEach((i) -> {
+                jenis = FXCollections.observableArrayList(pengeluaranData);
+            });
+            cmbJenis.setItems(jenis);
+        } else if (selectedIndex == 2) {
+            printReport.setDisable(false);
+            transaksis = FXCollections.observableArrayList(transaksiDao.getPendapatanData());
+            pengeluaranData.forEach((i) -> {
+                jenis = FXCollections.observableArrayList(pengeluaranData);
+            });
+            cmbJenis.setItems(jenis);
         }
+
         tabelTransaksi.setItems(transaksis);
         columnNominal.setCellValueFactory(new PropertyValueFactory<>("nominalString"));
         columnTanggal.setCellValueFactory(new PropertyValueFactory<>("tanggalTransaksi"));
@@ -111,24 +118,22 @@ public class TransaksiController {
         JasperPrint jasperPrint;
         Connection conn = DriverManager.getConnection(
                 "jdbc:mysql://localhost:3306/moneymanagementdb",
-                "root",""
+                "root", ""
         );
         Map param = new HashMap();
-        param.put("user",loggedIn());
-
-        System.out.println(cmbFilter.getValue());
+        param.put("user", loggedIn());
         if (cmbFilter.getValue() == "Pendapatan") {
             jasperPrint = JasperFillManager.fillReport("reports/LaporanPendapatan.jasper", param, conn);
         } else {
             jasperPrint = JasperFillManager.fillReport("reports/LaporanPengeluaran.jasper", param, conn);
         }
-        JasperViewer viewer = new JasperViewer(jasperPrint,false);
+        JasperViewer viewer = new JasperViewer(jasperPrint, false);
         viewer.setTitle("Group Report");
         viewer.setVisible(true);
 
     }
 
-    public String loggedIn(){
+    public String loggedIn() {
 
         String nama;
         BufferedReader reader;

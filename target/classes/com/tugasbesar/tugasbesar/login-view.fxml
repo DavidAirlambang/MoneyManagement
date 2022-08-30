@@ -16,18 +16,18 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<Pane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #37dbff;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tugasbesar.tugasbesar.controller.LoginController">
+<Pane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="650.0" style="-fx-background-color: #37dbff;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tugasbesar.tugasbesar.controller.LoginController">
    <children>
-      <HBox layoutY="-1.0" prefHeight="400.0" prefWidth="600.0">
+      <HBox layoutY="-1.0" prefHeight="450.0" prefWidth="650.0">
          <children>
             <AnchorPane prefHeight="400.0" prefWidth="250.0">
                <children>
-                  <Text layoutX="14.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Roboto;" text="Money" textAlignment="CENTER" wrappingWidth="221.31103515625" AnchorPane.topAnchor="40.0">
+                  <Text fill="#009ac4" layoutX="14.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Roboto;" text="Money" textAlignment="CENTER" wrappingWidth="221.31103515625" AnchorPane.topAnchor="40.0">
                      <font>
                         <Font name="Arial Rounded MT Bold" size="25.0" />
                      </font>
                   </Text>
-                  <Text layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Roboto;" text="Management" textAlignment="CENTER" wrappingWidth="250.0">
+                  <Text fill="#00a4c6" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Roboto;" text="Management" textAlignment="CENTER" wrappingWidth="250.0">
                      <font>
                         <Font name="Arial Rounded MT Bold" size="25.0" />
                      </font>
@@ -39,7 +39,7 @@
                   </ImageView>
                </children>
             </AnchorPane>
-            <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="402.0" prefWidth="350.0" style="-fx-background-color: #00a4c6;">
+            <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="450.0" prefWidth="400.0" style="-fx-background-color: #00a4c6;">
                <children>
                   <GridPane layoutY="119.0" prefHeight="124.0" prefWidth="310.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
                     <columnConstraints>
@@ -70,7 +70,7 @@
                         <Font name="Arial Rounded MT Bold" size="35.0" />
                      </font>
                   </Text>
-                  <VBox alignment="CENTER" layoutY="256.0" prefHeight="135.0" prefWidth="346.0" spacing="10.0">
+                  <VBox alignment="CENTER" layoutY="256.0" prefHeight="135.0" prefWidth="400.0" spacing="10.0">
                      <children>
                         <Button fx:id="loginAccount" mnemonicParsing="false" onAction="#loginAccount" prefHeight="34.0" prefWidth="155.0" style="-fx-background-color: #00E8EF;" text="Login" textFill="WHITE">
                            <font>

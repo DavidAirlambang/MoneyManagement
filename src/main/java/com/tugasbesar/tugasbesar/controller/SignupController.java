@@ -12,6 +12,8 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.Pane;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.net.URL;
 import java.security.MessageDigest;
@@ -53,6 +55,7 @@ public class SignupController {
         UserDao userDao = new UserDao();
         UserEntity userEntity = new UserEntity();
 
+        // Confirm password
         if (Objects.equals(password.getText(), passwordConfirm.getText())) {
             String newPass = hash();
             userEntity.setUsername(username.getText());
@@ -61,6 +64,7 @@ public class SignupController {
 
             if (hasil > 0){
                 toMain();
+                loggedIn();
             }
         } else {
             Alert alert = new Alert(Alert.AlertType.INFORMATION,"Confirmation Password does not match");
@@ -84,6 +88,20 @@ public class SignupController {
             throw new RuntimeException(e);
         }
         root.getScene().setRoot(newRoot);
+
+    }
+
+    public void loggedIn() {
+
+        BufferedWriter writer;
+        String filename = "data/logged.txt";
+        try {
+            writer = new BufferedWriter(new FileWriter(filename));
+            writer.write(username.getText());
+            writer.close();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
 
     }
 

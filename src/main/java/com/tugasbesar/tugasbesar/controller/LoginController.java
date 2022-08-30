@@ -32,6 +32,7 @@ public class LoginController {
         UserDao userDao = new UserDao();
 
         try {
+            // Buat hash
             MessageDigest md = MessageDigest.getInstance("MD5");
             md.update(password.getText().getBytes());
             byte[] bytes = md.digest();
@@ -41,8 +42,8 @@ public class LoginController {
                 sb.append(Integer.toString((bytes[i] & 0xff) + 0x100, 16).substring(1));
             }
             String generatedPassword = sb.toString();
-//            System.out.println(generatedPassword);
 
+            // Validasi di Dao
             int hasil = userDao.Validator(colUsername.getText(),generatedPassword);
 
             if (hasil != 0){

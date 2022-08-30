@@ -11,6 +11,9 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 
 import javax.persistence.criteria.*;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.List;
 
 public class TransaksiDao implements DaoInterface<TransaksiEntity> {
@@ -260,5 +263,20 @@ public class TransaksiDao implements DaoInterface<TransaksiEntity> {
         }
         s.close();
         return hasil;
+    }
+
+    public String loggedIn() {
+
+        String nama;
+        BufferedReader reader;
+        String filename = "data/logged.txt";
+        try {
+            reader = new BufferedReader(new FileReader(filename));
+            String json = reader.readLine();
+            nama = json;
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        return nama;
     }
 }
