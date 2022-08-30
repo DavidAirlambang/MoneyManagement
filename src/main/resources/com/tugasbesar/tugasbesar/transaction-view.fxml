@@ -64,7 +64,8 @@
                </padding>
             </TableView>
             <ComboBox fx:id="cmbFilter" layoutX="502.0" layoutY="20.0" onAction="#filterJenisData" prefWidth="150.0" />
-            <Button fx:id="printReport" layoutX="147.0" layoutY="309.0" mnemonicParsing="false" onAction="#printReport" prefHeight="26.0" prefWidth="104.0" text="Print Report" />
+            <Button fx:id="printReport" layoutX="39.0" layoutY="344.0" mnemonicParsing="false" onAction="#printReport" prefHeight="26.0" prefWidth="197.0" text="Print Report" />
+            <Button fx:id="btnDeleteData" layoutX="147.0" layoutY="309.0" mnemonicParsing="false" onAction="#deleteData" prefHeight="26.0" prefWidth="89.0" text="Delete Data" />
          </children>
       </AnchorPane>
    </children>

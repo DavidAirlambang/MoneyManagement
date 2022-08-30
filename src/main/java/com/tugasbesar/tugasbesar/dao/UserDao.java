@@ -51,6 +51,7 @@ public class UserDao implements DaoInterface<UserEntity> {
         q.where(p3);
 
         List test = s.createQuery(q).getResultList();
+        System.out.println(test);
         if(test.isEmpty()){
             hasil = 0;
         } else {

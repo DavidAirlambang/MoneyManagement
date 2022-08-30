@@ -27,21 +27,20 @@ import java.text.NumberFormat;
 import java.util.*;
 
 public class TransaksiController {
-    public TextField inputIdTransaksi;
     public TextField inputNominal;
     public DatePicker inputTanggal;
     public ComboBox cmbJenis;
     public TextField inputKeterangan;
-    public ComboBox cmbTempat;
+    public ComboBox<SaldoEntity> cmbTempat;
     public Button btnSaveData;
-    public TableView tabelTransaksi;
+    public TableView<TransaksiEntity> tabelTransaksi;
     public TableColumn columnNominal;
     public TableColumn columnTanggal;
-    public TableColumn columnJenis;
     public TableColumn columnKeterangan;
     public TableColumn columnTempat;
     public ComboBox<String> cmbFilter;
     public Button printReport;
+    public Button btnDeleteData;
 
     ObservableList<String> option;
     ObservableList jenis;
@@ -50,8 +49,6 @@ public class TransaksiController {
     ObservableList<PengeluaranEntity> pengeluaranData;
     private ObservableList<TransaksiEntity> transaksis;
     private ObservableList<UserEntity> users;
-
-    private FilteredList<UserEntity> filteredUser;
 
     public void initialize() {
         // Memasukkan option ke combo box pendapatan / pengeluaran
@@ -64,7 +61,6 @@ public class TransaksiController {
         PengeluaranDao pengeluaranDao = new PengeluaranDao();
         pendapatanData = FXCollections.observableArrayList(pendapatanDao.getData());
         pengeluaranData = FXCollections.observableArrayList(pengeluaranDao.getData());
-        //        jenis = FXCollections.observableArrayList(pendapatanData, pengeluaranData);
 
         // Memasukkan option ke combo box tempat penyimpanan saldo
         SaldoDao saldoDao = new SaldoDao();
@@ -82,6 +78,7 @@ public class TransaksiController {
         columnTanggal.setCellValueFactory(new PropertyValueFactory<>("tanggalTransaksi"));
         columnKeterangan.setCellValueFactory(new PropertyValueFactory<>("keterangan"));
         columnTempat.setCellValueFactory(new PropertyValueFactory<>("saldoBySaldoIdSaldo"));
+        printReport.setDisable(true);
     }
 
     public void filterJenisData(ActionEvent actionEvent) {
@@ -92,20 +89,17 @@ public class TransaksiController {
             transaksis = FXCollections.observableArrayList(transaksiDao.getData());
         } else if (selectedIndex == 1) {
             printReport.setDisable(false);
-            transaksis = FXCollections.observableArrayList(transaksiDao.getPengeluaranData());
-            pengeluaranData.forEach((i) -> {
-                jenis = FXCollections.observableArrayList(pengeluaranData);
-            });
+            transaksis = FXCollections.observableArrayList(transaksiDao.getPendapatanData());
+            jenis = FXCollections.observableArrayList(pendapatanData);
             cmbJenis.setItems(jenis);
+            cmbJenis.getSelectionModel().select(0);
         } else if (selectedIndex == 2) {
             printReport.setDisable(false);
-            transaksis = FXCollections.observableArrayList(transaksiDao.getPendapatanData());
-            pengeluaranData.forEach((i) -> {
-                jenis = FXCollections.observableArrayList(pengeluaranData);
-            });
+            transaksis = FXCollections.observableArrayList(transaksiDao.getPengeluaranData());
+            jenis = FXCollections.observableArrayList(pengeluaranData);
             cmbJenis.setItems(jenis);
+            cmbJenis.getSelectionModel().select(0);
         }
-
         tabelTransaksi.setItems(transaksis);
         columnNominal.setCellValueFactory(new PropertyValueFactory<>("nominalString"));
         columnTanggal.setCellValueFactory(new PropertyValueFactory<>("tanggalTransaksi"));
@@ -154,6 +148,13 @@ public class TransaksiController {
         t.setNominal(Integer.valueOf(inputNominal.getText()));
         t.setTanggalTransaksi(Date.valueOf(inputTanggal.getValue()));
         t.setKeterangan(inputKeterangan.getText());
+        if (cmbFilter.getSelectionModel().getSelectedIndex() == 1) {
+            t.setPendapatanByPendapatanIdPendapatan((PendapatanEntity) cmbJenis.getValue());
+        } else if (cmbFilter.getSelectionModel().getSelectedIndex() == 2) {
+            t.setPengeluaranByPengeluaranIdPengeluaran((PengeluaranEntity) cmbJenis.getValue());
+        }
+        t.setSaldoBySaldoIdSaldo(cmbTempat.getValue());
+        System.out.println(t);
         int hasil = dao.addData(t);
         transaksis = FXCollections.observableArrayList(dao.getData());
         tabelTransaksi.setItems(transaksis);
@@ -161,5 +162,23 @@ public class TransaksiController {
             Alert alert = new Alert(Alert.AlertType.INFORMATION, "Berhasil Add Data", ButtonType.OK);
             alert.showAndWait();
         }
+    }
+
+
+    public void deleteData(ActionEvent actionEvent) {
+        TransaksiEntity selectedItems;
+        selectedItems = tabelTransaksi.getSelectionModel().getSelectedItem();
+
+        TransaksiDao dao = new TransaksiDao();
+
+        Alert alertbox = new Alert(Alert.AlertType.CONFIRMATION, "Are you sure?", ButtonType.OK, ButtonType.CANCEL);
+        alertbox.showAndWait();
+        if (alertbox.getResult() == ButtonType.OK) {
+            Alert alert = new Alert(Alert.AlertType.INFORMATION, "Data berhasil dihapus", ButtonType.OK);
+            alert.showAndWait();
+            dao.delData(selectedItems);
+        }
+        transaksis = FXCollections.observableArrayList(dao.getData());
+        tabelTransaksi.setItems(transaksis);
     }
 }
