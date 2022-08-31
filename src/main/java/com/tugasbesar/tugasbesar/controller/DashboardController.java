@@ -56,8 +56,6 @@ public class DashboardController {
         tanggal.setText(format);
     }
 
-    public void printReport(ActionEvent actionEvent) {
-    }
 
     public void loggedIn(){
         BufferedReader reader;

@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc322d62-c52e-4042-8322-1e08abdf6df8" name="Changes" comment="Update Input,Pendapatan,pengeluaran-Controller + TransaksiEntity" />
+    <list default="true" id="bc322d62-c52e-4042-8322-1e08abdf6df8" name="Changes" comment="Update Input,Pendapatan,pengeluaran-Controller + TransaksiEntity">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/controller/DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/controller/DashboardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tugasbesar/tugasbesar/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/tugasbesar/tugasbesar/dashboard-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/tugasbesar/tugasbesar/dashboard-view.fxml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -138,6 +143,7 @@
       <workItem from="1661870909254" duration="6991000" />
       <workItem from="1661878656897" duration="2533000" />
       <workItem from="1661890509619" duration="3366000" />
+      <workItem from="1661910142003" duration="4457000" />
     </task>
     <task id="LOCAL-00001" summary="Make PengeluaranController + Filter for pendapatan &amp; pengeluaran">
       <created>1661267450260</created>

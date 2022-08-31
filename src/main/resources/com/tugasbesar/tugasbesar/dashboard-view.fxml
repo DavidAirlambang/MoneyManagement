@@ -4,11 +4,11 @@
 <?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.Separator?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="450.0" prefWidth="650.0" style="-fx-background-color: #EAFDFF;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tugasbesar.tugasbesar.controller.DashboardController">
@@ -28,9 +28,9 @@
                                           <Font name="Arial Rounded MT Bold" size="12.0" />
                                        </font>
                                     </Label>
-                                    <Label fx:id="username" text="ini ganti nama user" textFill="#37dbff">
+                                    <Label fx:id="username" text="ini ganti nama user" textFill="#00a4c6">
                                        <font>
-                                          <Font name="Arial Rounded MT Bold" size="30.0" />
+                                          <Font name="Arial Rounded MT Bold" size="40.0" />
                                        </font>
                                        <VBox.margin>
                                           <Insets left="10.0" top="5.0" />
@@ -38,14 +38,10 @@
                                     </Label>
                                  </children>
                               </VBox>
-                              <JFXButton fx:id="signOut" layoutX="248.0" layoutY="110.0" onAction="#signOut" style="-fx-border-color: blue;" text="Sign Out" />
+                              <JFXButton fx:id="signOut" layoutX="236.0" layoutY="100.0" onAction="#signOut" style="-fx-border-color: #00a4c6;" text="Sign Out" textFill="#00a4c6" />
+                              <Line endX="-7.20001220703125" endY="116.40000915527344" layoutX="330.0" layoutY="44.0" startX="-8.857147216796875" startY="-54.999996185302734" stroke="#96d0f7" />
                            </children>
                         </AnchorPane>
-                        <Separator orientation="VERTICAL" prefHeight="180.0">
-                           <padding>
-                              <Insets bottom="20.0" top="20.0" />
-                           </padding>
-                        </Separator>
                         <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="150.0" prefWidth="300.0">
                            <children>
                               <VBox layoutY="35.0" prefHeight="79.0" prefWidth="300.0">
@@ -57,12 +53,12 @@
                                     </Label>
                                     <HBox prefHeight="100.0" prefWidth="200.0">
                                        <children>
-                                          <Label text="Rp" textFill="#37dbff">
+                                          <Label text="Rp" textFill="#00a4c6">
                                              <font>
                                                 <Font name="Arial Rounded MT Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="totalBalance" layoutX="10.0" layoutY="10.0" text="Angkanya" textFill="#37dbff">
+                                          <Label fx:id="totalBalance" layoutX="10.0" layoutY="10.0" text="Angkanya" textFill="#00a4c6">
                                              <font>
                                                 <Font name="Arial Rounded MT Bold" size="30.0" />
                                              </font>
@@ -92,16 +88,16 @@
                   </Label>
                   <HBox layoutX="6.0" layoutY="31.0" prefHeight="120.0" prefWidth="644.0">
                      <children>
-                        <AnchorPane prefHeight="200.0" prefWidth="220.0">
+                        <AnchorPane prefHeight="126.0" prefWidth="322.0">
                            <children>
-                              <VBox layoutY="14.0" prefHeight="90.0" prefWidth="220.0">
+                              <VBox layoutX="10.0" layoutY="14.0" prefHeight="90.0" prefWidth="290.0">
                                  <children>
                                     <Label text="Pendapatan" textFill="#66c265">
                                        <font>
                                           <Font name="Arial Rounded MT Bold" size="12.0" />
                                        </font>
                                     </Label>
-                                    <HBox prefHeight="35.0" prefWidth="210.0">
+                                    <HBox alignment="CENTER" prefHeight="35.0" prefWidth="281.0">
                                        <children>
                                           <Label prefHeight="22.0" prefWidth="45.0" text="+ Rp" textFill="#66c265">
                                              <font>
@@ -125,42 +121,38 @@
                                     </HBox>
                                  </children>
                               </VBox>
+                              <Line endX="-11.220623016357422" endY="-26.542236328125" layoutX="327.0" layoutY="151.0" startX="-10.513725280761719" startY="-159.9280548095703" stroke="#96d0f7" />
                            </children>
                         </AnchorPane>
-                        <Separator orientation="VERTICAL" prefHeight="200.0">
-                           <padding>
-                              <Insets bottom="10.0" top="10.0" />
-                           </padding>
-                        </Separator>
-                        <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="220.0">
+                        <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="126.0" prefWidth="445.0">
                            <children>
-                              <VBox layoutY="14.0" prefHeight="90.0" prefWidth="220.0">
+                              <VBox layoutY="14.0" prefHeight="90.0" prefWidth="300.0">
                                  <children>
-                                    <Label text="Pengeluaran" textFill="RED">
+                                    <Label text="Pengeluaran" textFill="#f47f7f">
                                        <font>
                                           <Font name="Arial Rounded MT Bold" size="12.0" />
                                        </font>
                                     </Label>
-                                    <HBox prefHeight="35.0" prefWidth="200.0">
+                                    <HBox alignment="CENTER" prefHeight="35.0" prefWidth="256.0">
                                        <children>
-                                          <Label prefHeight="22.0" prefWidth="43.0" text="- Rp" textFill="RED">
+                                          <Label prefHeight="22.0" prefWidth="43.0" text="- Rp" textFill="#f47f7f">
                                              <font>
                                                 <Font name="Arial Rounded MT Bold" size="18.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="pengeluaran" layoutX="10.0" layoutY="10.0" text="Pengeluaran" textFill="RED">
+                                          <Label fx:id="pengeluaran" layoutX="10.0" layoutY="10.0" text="Pengeluaran" textFill="#f47f7f">
                                              <font>
                                                 <Font name="Arial Rounded MT Bold" size="20.0" />
                                              </font>
                                           </Label>
                                        </children>
                                        <VBox.margin>
-                                          <Insets left="10.0" top="10.0" />
+                                          <Insets left="10.0" right="10.0" top="10.0" />
                                        </VBox.margin>
                                     </HBox>
                                     <HBox alignment="CENTER" prefHeight="23.0" prefWidth="220.0">
                                        <children>
-                                          <FontAwesomeIconView fill="RED" glyphName="MONEY" size="25" />
+                                          <FontAwesomeIconView fill="#f47f7f" glyphName="MONEY" size="25" />
                                        </children>
                                     </HBox>
                                  </children>
@@ -171,17 +163,20 @@
                            </HBox.margin>
                         </AnchorPane>
                         <AnchorPane prefHeight="120.0" prefWidth="130.0" />
-                     </children></HBox>
-                  <Label alignment="CENTER" layoutX="498.0" layoutY="7.0" text="Tanggal :" textFill="#37dbff">
+                     </children>
+                  </HBox>
+                  <Label alignment="CENTER" layoutX="498.0" layoutY="7.0" text="Tanggal :" textFill="#00a4c6">
                      <font>
                         <Font name="Arial Rounded MT Bold" size="12.0" />
                      </font>
                   </Label>
-                  <Label fx:id="tanggal" alignment="CENTER" layoutX="557.0" layoutY="7.0" text="tanggal disini" textFill="#37dbff">
+                  <Label fx:id="tanggal" alignment="CENTER" layoutX="557.0" layoutY="7.0" text="tanggal disini" textFill="#00a4c6">
                      <font>
                         <Font name="Arial Rounded MT Bold" size="12.0" />
                      </font>
                   </Label>
+                  <Line endX="-468.9999694824219" endY="114.00000762939453" layoutX="469.0" layoutY="-114.0" startX="183.7999267578125" startY="114.00000762939453" stroke="#96d0f7" />
+                  <Line endX="-472.9999694824219" endY="112.69287872314453" layoutX="473.0" layoutY="-90.0" startX="178.199951171875" startY="112.69287872314453" stroke="#96d0f7" />
                </children>
             </AnchorPane>
             <Pane prefHeight="144.0" prefWidth="640.0" style="-fx-background-color: #37DBFF;">

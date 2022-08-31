@@ -9,6 +9,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
@@ -31,30 +32,34 @@ public class LoginController {
 
         UserDao userDao = new UserDao();
 
-        try {
-            // Buat hash
-            MessageDigest md = MessageDigest.getInstance("MD5");
-            md.update(password.getText().getBytes());
-            byte[] bytes = md.digest();
+        if (password.getText().isEmpty() || colUsername.getText().isEmpty()){
+            Alert alert = new Alert(Alert.AlertType.INFORMATION,"Isi semua field");
+            alert.showAndWait();
+        } else {
+            try {
+                // Buat hash
+                MessageDigest md = MessageDigest.getInstance("MD5");
+                md.update(password.getText().getBytes());
+                byte[] bytes = md.digest();
 
-            StringBuilder sb = new StringBuilder();
-            for (int i = 0; i < bytes.length; i++) {
-                sb.append(Integer.toString((bytes[i] & 0xff) + 0x100, 16).substring(1));
+                StringBuilder sb = new StringBuilder();
+                for (int i = 0; i < bytes.length; i++) {
+                    sb.append(Integer.toString((bytes[i] & 0xff) + 0x100, 16).substring(1));
+                }
+                String generatedPassword = sb.toString();
+
+                // Validasi di Dao
+                int hasil = userDao.Validator(colUsername.getText(), generatedPassword);
+
+                if (hasil != 0) {
+                    loggedIn();
+                    toMain();
+                }
+
+            } catch (NoSuchAlgorithmException e) {
+                throw new RuntimeException(e);
             }
-            String generatedPassword = sb.toString();
-
-            // Validasi di Dao
-            int hasil = userDao.Validator(colUsername.getText(),generatedPassword);
-
-            if (hasil != 0){
-                loggedIn();
-                toMain();
-            }
-
-        } catch (NoSuchAlgorithmException e) {
-            throw new RuntimeException(e);
         }
-
     }
 
     public void newAccount(ActionEvent actionEvent) throws IOException {
